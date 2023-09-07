@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: rgba(100, 148, 237, 0.307);
+}
+
+.Title {
+  text-align: center;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  border: 1px solid rgba(0, 0, 0, 0.075);
+  background: rgba(100, 148, 237, 0.655);
+  padding: 8px;
+  width: auto;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  cursor: pointer;
+}
+
+a:hover {
+  opacity: 0.5;
+}
+
+.Buttons {
+  padding-top: 20px;
+  padding-left: 10px;
+}
+
+.Buttons li {
+  display: inline-block;
+  border: 1px solid rgba(0, 0, 0, 0.075);
+  background: rgba(100, 148, 237, 0.655);
+  border-radius: 12px / 40px;
+  padding: 8px;
+}
+
+.Two {
+  margin-top: 30px;
+}
+
+table {
+  border-collapse: collapse;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+table td,
+table th {
+  position: relative;
+  padding: 10px;
+}
+
+table td::after,
+table th::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border: 1px solid black;
+}
+
+table .thick-border::after {
+  border-width: 2px;
+}
+
+table td {
+  text-align:center;
+}

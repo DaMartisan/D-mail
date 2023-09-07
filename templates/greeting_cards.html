@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Отправка открытки по электросети</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='IStyle.css') }}">
+  </head>
+  <body>
+    <div class="Title">
+      <h1>Отправка открытки по электросети</h1>
+    </div>
+    <ul class="Buttons">
+      <li><a href="{{ url_for('show_bd') }}">Database</a></li>
+    </ul>
+    <div class="content">
+      <form action="/send_sms" method="POST">
+        <div class="row">
+          <div class="from-group">
+            <label for="abonent_number">Абонентский номер:</label>
+            <input
+              type="text"
+              id="abonent_number"
+              name="abonent_number"
+              required
+              autocomplete="off"
+            /><br />
+          </div>
+          <!--  -->
+          <div class="from-group">
+            <label for="full_name">ФИО абонента:</label>
+            <input
+              type="text"
+              id="full_name"
+              name="full_name"
+              required
+              autocomplete="off"
+            /><br />
+          </div>
+          <!--  -->
+          <div class="from-group">
+            <label for="address">Адрес:</label>
+            <input
+              type="text"
+              id="address"
+              name="address"
+              autocomplete="off"
+              required
+            /><br />
+          </div>
+          <!--  -->
+          <div class="from-group">
+            <label for="usage_period">Период использования услугой:</label>
+            <input
+              type="text"
+              id="usage_period"
+              name="usage_period"
+              required
+              autocomplete="off"
+            /><br />
+          </div>
+          <!--  -->
+          <div class="from-group">
+            <label for="previous_data">Данные за предыдущий период:</label>
+            <input
+              type="text"
+              id="previous_data"
+              name="previous_data"
+              required
+              autocomplete="off"
+            /><br />
+          </div>
+          <!--  -->
+          <div class="from-group">
+            <label for="current_data">Данные за текущий период:</label>
+            <input
+              type="text"
+              id="current_data"
+              name="current_data"
+              required
+              autocomplete="off"
+            /><br />
+          </div>
+        </div>
+        <!--  -->
+        <div class="from-group">
+          <label for="greeting_text">Текст поздравления:</label>
+          <textarea id="greeting_text" name="greeting_text"></textarea><br />
+        </div>
+        <!--  -->
+        <input class="btn" type="submit" value="Отправить" />
+      </form>
+      <div class="footer">
+        <p>Copyright D©2023 | Buskin Daniil</p>
+      </div>
+    </div>
+  </body>
+</html>

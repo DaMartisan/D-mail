@@ -1,0 +1,118 @@
+body {
+  background: rgba(100, 148, 237, 0.307);
+}
+
+* {
+  margin: 0;
+}
+
+.Title {
+  text-align: center;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  border: 1px solid rgba(0, 0, 0, 0.075);
+  background: rgba(100, 148, 237, 0.655);
+  padding: 8px;
+  width: auto;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  cursor: pointer;
+}
+
+a:hover {
+  opacity: 0.5;
+}
+
+.Buttons {
+  padding-top: 20px;
+  padding-left: 10px;
+}
+
+.Buttons li {
+  display: inline-block;
+  border: 1px solid rgba(0, 0, 0, 0.075);
+  background: rgba(100, 148, 237, 0.655);
+  border-radius: 12px / 40px;
+  padding: 8px;
+}
+
+.content {
+  padding-top: 7px;
+  text-align: center;
+  border: 2px solid rgba(128, 128, 128, 0.197);
+  border-radius: 30px;
+  background: rgba(255, 255, 255, 0.978);
+  margin-left: 35%;
+  margin-right: 35%;
+  /* padding: 1%; */
+}
+
+/* Медиа-запрос для мобильных устройств */
+@media screen and (max-width: 768px) {
+  .content {
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+}
+
+.content input[type="text"] {
+  text-align: center;
+}
+
+.content textarea[id="greeting_text"] {
+  text-align: center;
+}
+
+.from-group label {
+  padding-top: 7px;
+  display: block;
+  font-size: 14px;
+  color: rgb(191, 66, 66);
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.from-group input,
+.from-group textarea {
+  width: 70%;
+  box-sizing: border-box;
+  border: none;
+  background: transparent;
+  border-bottom: 1px solid #00000088;
+  padding: 5px 0 10px;
+  outline: none;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  margin-bottom: 8px;
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+}
+
+.btn {
+  margin-top: 10px;
+  background: rgba(100, 148, 237, 0.655);
+  padding: 15px 20px;
+  color: black;
+  border: none;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+.footer p {
+  padding-top: 5px;
+  padding-bottom: auto;
+  font-size: 14px;
+  font-family: inherit;
+  text-align: center;
+  color: black;
+  margin-bottom: 10px;
+}

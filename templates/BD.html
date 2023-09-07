@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Поздравительные открытки</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='BdStyle.css') }}">
+  </head>
+  <body>
+    <div class="Title"><h1>Поздравительные открытки</h1></div>
+    <ul class="Buttons">
+      <li><a href="{{ url_for('show_greeting_cards') }}">Send</a></li>
+    </ul>
+    <div class="Two">
+      <table>
+        <tr>
+          <th>Абонентский номер</th>
+          <th>ФИО абонента</th>
+          <th>Адрес</th>
+          <th>Период использования</th>
+          <th>Данные за предыдущие</th>
+          <th>Данные за текущие</th>
+          <th>Текст поздравления</th>
+        </tr>
+        {% for card in cards %}
+        <tr>
+          <td>{{ card.abonent_number }}</td>
+          <td>{{ card.full_name }}</td>
+          <td>{{ card.address }}</td>
+          <td>{{ card.usage_period }}</td>
+          <td>{{ card.previous_data }}</td>
+          <td>{{ card.current_data }}</td>
+          <td>{{ card.greeting_text }}</td>
+        </tr>
+        {% endfor %}
+      </table>
+    </div>
+    <div style="height: 300px"></div>
+  </body>
+</html>
