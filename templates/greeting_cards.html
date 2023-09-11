@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Отправка открытки по электросети</title>
+    <title>Отправка открытки по сети</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='IStyle.css') }}">
   </head>
+  
   <body>
     <div class="Title">
-      <h1>Отправка открытки по электросети</h1>
+      <h1>Отправка открытки по сети</h1>
     </div>
     <ul class="Buttons">
       <li><a href="{{ url_for('show_bd') }}">Database</a></li>
@@ -24,7 +25,9 @@
               autocomplete="off"
             /><br />
           </div>
+          
           <!--  -->
+          
           <div class="from-group">
             <label for="full_name">ФИО абонента:</label>
             <input
@@ -35,7 +38,9 @@
               autocomplete="off"
             /><br />
           </div>
+          
           <!--  -->
+          
           <div class="from-group">
             <label for="address">Адрес:</label>
             <input
@@ -46,7 +51,9 @@
               required
             /><br />
           </div>
+          
           <!--  -->
+          
           <div class="from-group">
             <label for="usage_period">Период использования услугой:</label>
             <input
@@ -57,7 +64,9 @@
               autocomplete="off"
             /><br />
           </div>
+          
           <!--  -->
+          
           <div class="from-group">
             <label for="previous_data">Данные за предыдущий период:</label>
             <input
@@ -68,7 +77,9 @@
               autocomplete="off"
             /><br />
           </div>
+          
           <!--  -->
+          
           <div class="from-group">
             <label for="current_data">Данные за текущий период:</label>
             <input
@@ -80,12 +91,16 @@
             /><br />
           </div>
         </div>
+        
         <!--  -->
+        
         <div class="from-group">
           <label for="greeting_text">Текст поздравления:</label>
           <textarea id="greeting_text" name="greeting_text"></textarea><br />
         </div>
+        
         <!--  -->
+        
         <input class="btn" type="submit" value="Отправить" />
       </form>
       <div class="footer">
