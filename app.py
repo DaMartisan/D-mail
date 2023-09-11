@@ -51,7 +51,7 @@ def send_sms():
 
     # Отправка сообщения по электронной почте через Gmail
     sender_email = 'buskindaniil0@gmail.com'
-    sender_password = 'pwidygskeqbxkkzo'
+    sender_password = 'cgtpgpugjhmcmfeg'
     recipient_email = 'buksin96@gmail.com'
 
     msg = MIMEMultipart()
