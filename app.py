@@ -7,7 +7,7 @@ from flask_migrate import Migrate
 import smtplib
 
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///D:\Work\D-mail/database.db'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///D:/Work/D-mail/database.db'
 db = SQLAlchemy(app)
 migrate = Migrate(app, db)
 
